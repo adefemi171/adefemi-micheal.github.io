@@ -1,0 +1,9 @@
+{
+    "redirects": [
+      { "source": "/me", "destination": "/index.html" },
+      { "source": "/education", "destination": "/pages/education.html" },
+      { "source": "/projects", "destination": "/pages/projects.html" },
+      { "source": "/work-experience", "destination": "/pages//workexp.html" },
+      { "source": "/now", "destination": "/pages/now.html" }
+    ]
+}

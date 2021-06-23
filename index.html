@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adefemi Oseni | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    <div class="main">
+        <div class="header-main mobile">
+            <img src="./assets/menu.svg" alt="" onclick="toggleSideBar()">
+            <div class="title">Adefemi Oseni</div>
+            <div class="role">Full Stack Developer</div>
+        </div>
+        
+        <div class="side-bar" id="sideBar">
+            
+            <div class="home" onclick="handleRoute('home')">
+                <img src="./assets/home.svg" alt="home">
+                <h3>Home</h3>
+            </div>
+            <div class="side-con">
+                <div id="aboutLink" class="side-items" onclick="handleRoute('about')">
+                    <img src="./assets/user.svg" alt="user">
+                    <div class="title">About</div>
+                </div>
+                <div id="experienceLink" class="side-items" onclick="handleRoute('experience')">
+                    <img src="./assets/progress.svg" alt="progress">
+                    <div class="title">Experience</div>
+                </div>
+                <div id="projectsLink" class="side-items" onclick="handleRoute('projects')">
+                    <img src="./assets/file1.svg" alt="projects">
+                    <div class="title">Projects</div>
+                </div>
+                <div id="skillsLink" class="side-items" onclick="handleRoute('skills')">
+                    <img src="./assets/advance.svg" alt="skill">
+                    <div class="title">Skills</div>
+                </div>
+                <!-- <div class="side-items">
+                    <img src="./assets/star.svg" alt="star">
+                    <div class="title">Awards</div>
+                </div> -->
+                <div id="educationLink" class="side-items" onclick="handleRoute('education')">
+                    <img src="./assets/education.svg" alt="education">
+                    <div class="title">Education</div>
+                </div>
+                <div id="blogLink" class="side-items" onclick="handleRoute('blog')">
+                    <img src="./assets/youtube.svg" alt="youtube">
+                    <div class="title">Blog</div>
+                </div>
+                <a href="https://drive.google.com/file/d/1hpkVfN8gtO1_WxDb1AVT-7EwC61MzA0U/view?usp=sharing" target="_blank">
+                    <div class="side-items">
+                        <img src="./assets/file2.svg" alt="resume">
+                        <div class="title">Resume</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="overlay mobile" onclick="toggleSideBar()"></div>
+        <div id="containerMain" class="container" onscroll="handleScroll()">
+            <div id="home">
+                <div class="cover"></div>
+                <div class="info">
+                    <div class="title">ADEFEMI OSENI</div>
+                    <div class="desc">FULL-STACK DEVELOPER</div>
+                    <div class="con">
+                        <div class="contact-item">
+                            <img src="./assets/tel.svg" alt="tel">
+                            <a href="tel:+2349032569595">+234(0)90-325-69595</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./assets/mail.svg" alt="mail">
+                            <a href="mailto:oseni.adefemigreat@gmail.com">oseni.adefemigreat@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./assets/linkedin.svg" alt="linkedin">
+                            <a href="https://www.linkedin.com/in/adefemi-oseni-b11079149/" target="_blank">Adefemi Oseni</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./assets/twitter.svg" alt="twitter">
+                            <a href="https://twitter.com/GreatAdefemi" target="_blank">@GreatAdefemi</a>
+                        </div>
+                        <div class="contact-item">
+                            <img src="./assets/github.svg" alt="git">
+                            <a href="https://github.com/adefemi" target="_blank">@Adefemi</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="about" class="component">
+                <div class="heading">About</div>
+               <div class="content">
+                <p>
+                    I've been fasinated at how computers work, the speed, the accuracy, the convinience, all this was a major pointer that drove me 
+                    into the computer world. I have a huge interest in creating things that work, that's useful and fast and accurate. Studying 
+                    Computer Science in the University wasn't the catch but was more like an avenue to realizing my goal.
+                </p>
+                <p>
+                    I want to create fast, usable, clean technologies that will revolunize the world and am willing to achieve this with like minds, 
+                    organizations, and other associations.
+                </p>
+                <p>
+                    During my career, i've been more of a perfectionist and i appreciate this more because i believe in doing little that works (and 
+                    works fine) rather than having something large but not usable. My main focus is into Programming even though I can be a major player 
+                    in the design field owning to my talent in Art (I wanted to be an Artist). 
+                </p>
+                <p>
+                    Also, during my career as a software engineer, i've been opportuned to work with different Programming Languages which gave me more
+                    insight to the programming world. 
+                </p>
+               </div>
+            </div>
+            <div id="experience" class="component">
+                <div class="heading">Experience</div>
+                <br/>
+                <div class="content">
+                    <div class="experience-card">
+                        <div class="header">
+                            <img src="./assets/kodobe.png" alt="logo">
+                            <div class="context">
+                                <div class="title">Kodobe Limited</div>
+                                <div class="role">Senior Front-end Engineer</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>Lead Front-end engineer</li>
+                            <li>Develop clean and Responsive Front facing apps</li>
+                            <li>Creates CICD pipeline to push project to both server (bash) and S3</li>
+                            <li>Establish Implementation procedure for the Front-end development</li>
+                            <li>Mentor junior developers, and handle Code Reviews.</li>
+                        </div>
+                        <div class="footer">
+                            Jan 2021 - Present | Lagos, Nigeria
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="header">
+                            <img src="./assets/algorismLogo.jfif" alt="logo">
+                            <div class="context">
+                                <div class="title">Algorism Limited</div>
+                                <div class="role">Senior Software Engineer</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>Lead Developer</li>
+                            <li>Develop clean and Responsive Front facing apps</li>
+                            <li>Develop fast, scalable and clean backend API</li>
+                            <li>Create sophisticated mobile applications for both Android and IOS</li>
+                            <li>Create Sprint Plans and Allocate tasks</li>
+                            <li>Setup CICD Pipelines for both Front-end and Back-end Apps</li>
+                            <li>Handles Code Reviews</li>
+                            <li>Mentor junior developers</li>
+                        </div>
+                        <div class="footer">
+                            June 2020 - Dec 2020 | Lagos, Nigeria
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="header">
+                            <img src="./assets/algorismLogo.jfif" alt="logo">
+                            <div class="context">
+                                <div class="title">Algorism Limited</div>
+                                <div class="role">Software Engineer</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>Develop clean and Responsive Front facing apps</li>
+                            <li>Develop fast, scalable and clean backend API</li>
+                            <li>Contribute core features across entire stack</li>
+                            <li>Engage in code reviews</li>
+                        </div>
+                        <div class="footer">
+                            Jan 2019 - May 2020 | Lagos, Nigeria
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="header">
+                            <img src="./assets/achieverLogo.jfif" alt="logo">
+                            <div class="context">
+                                <div class="title">Achievers University</div>
+                                <div class="role">Web Developer</div>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>Rebranded the School website</li>
+                        </div>
+                        <div class="footer">
+                            Jan 2018 - Nov 2018 | Ondo, Nigeria
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="projects" class="component">
+                <div class="heading">Projects</div>
+                <br/>
+                <div class="content">
+                    <div class="project-grid">
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/realtyprox.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title">Realtyprox</div>
+                                    <p>
+                                        An Estate management platform that's focused on handling all process of house management.
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Lead</div>
+                                    <div class="info">
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('realtyprox')">
+                                        <a href="https://www.realtyprox.co" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="realtyprox">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('realtyprox')">
+                                    <h3>Stacks</h3>
+                                    <li>Frontend: React JS (for dashboard), PHP main page (for SEO)</li>
+                                    <li>Backend: Django (REST-API), Postgres, RabbitMQ, Node js Socket Service</li>
+                                    <li>Devops: Aws S3, E2, CloudFront, Bitbucket CICD, digital ocean, nginx</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/taskprox.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title" >Taskprox</div>
+                                    <p>
+                                        Taskprox is an Artisan hailing platform, aimed at bringing together Artisans and Requesters and also, managing the affairs.
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Lead</div>
+                                    <div class="info">
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('taskprox')">
+                                        <a href="https://www.taskprox.com" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="taskprox">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('taskprox')">
+                                    <h3>Stacks</h3>
+                                    <li>Frontend: React JS</li>
+                                    <li>Backend: Django (GraphQl), Postgres, RabbitMQ, Node js Socket Service</li>
+                                    <li>Devops: Aws S3, E2, CloudFront, Bitbucket CICD, digital ocean, nginx</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/chatapp.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title" >ChatApp - Devtot</div>
+                                    <p>
+                                       This is a real-time chat application where logged in users can chat with one another.
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Solo</div>
+                                    <div class="info">
+                                        <a href="https://github.com/adefemi/chatapi" target="_blank"><img src="./assets/github.svg" alt=""></a>
+                                        
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('chatapp')">
+                                        <a href="https://chatapp.devtot.com" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="chatapp">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('chatapp')">
+                                    <h3>Stacks</h3>
+                                    <li>Frontend: React JS</li>
+                                    <li>Backend: Django (REST-API), Postgres, Node js Socket Service</li>
+                                    <li>Devops: Aws S3, CloudFlare, CloudFront, Netlify, digital ocean, nginx</li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/ecommerce_graph.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title" >Ecommerce (Graphql Playground)</div>
+                                    <p>
+                                       This is a Graphql playground for an ecommerce platform. We can register, login, add product, add to wish list and lot more
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Solo</div>
+                                    <div class="info">
+                                        <a href="https://github.com/adefemi/ecommerce-api" target="_blank">
+                                            <img src="./assets/github.svg" alt=""></a>
+                                        
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('ecommerce_graph')">
+                                        <a href="https://https://api-ecommerce.devtot.com/graphview/" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="ecommerce_graph">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('ecommerce_graph')">
+                                    <h3>Stacks</h3>
+                                    <li>Django, Graphql, Graphene, Postgres</li>
+                                    <li>Devops: Aws S3, CloudFlare, digital ocean, nginx</li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/tylgames.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title" >TYL GAMES</div>
+                                    <p>
+                                       This is a bet website website. Users can log on to play games like shaffle (Raffle) or Shoki (Instant)
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Freelance</div>
+                                    <div class="info">
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('tyl')">
+                                        <a href="https://www.tylgames.com" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="tyl">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('tyl')">
+                                    <h3>Stacks</h3>
+                                    <li>Frontend: React JS</li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="project-card">
+                            <div class="cover" style="background-image: url('./assets/projects/xtrawinAccess.JPG');"></div>
+                            <div class="context">
+                                <div>
+                                    <div class="title" >XTRAWIN - ACCESS</div>
+                                    <p>
+                                       This is gamification platform where customers of Access bank PLC can log on to see how to win prizes.
+                                    </p>
+                                </div>
+                                <div class="footer">
+                                    <div class="cab">Front-end</div>
+                                    <div class="info">
+                                        <img src="./assets/stack.svg" alt="" onclick="showStack('xtrawin')">
+                                        <a href="https://xtrawin.accessbankplc.com" target="_blank">View</a>
+                                    </div>
+                                </div>
+                                <div class="stack" id="xtrawin">
+                                    <img src="./assets/close.svg" class="close" alt="close" onclick="closeStack('xtrawin')">
+                                    <h3>Stacks</h3>
+                                    <li>Frontend: React JS</li>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="skills" class="component">
+                <div class="heading">Skills</div>
+                <br/>
+               <div class="content">
+                <div class="skill-card">
+                    <div class="header">
+                        Front-end
+                    </div>
+                    <div class="skillsets">
+                        <div class="skill-item">
+                            <img src="./assets/stacks/html.svg" alt="html">
+                            <div class="title">HTML 5</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/css.svg" alt="css">
+                            <div class="title">CSS</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/scss.svg" alt="scss">
+                            <div class="title">SCSS/SASS/LESS</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/react.svg" alt="react">
+                            <div class="title">React</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/nextjs.svg" alt="next">
+                            <div class="title">Nextjs</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/php.svg" alt="next">
+                            <div class="title">PHP</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="header">
+                        Back-end
+                    </div>
+                    <div class="skillsets">
+                        <div class="skill-item">
+                            <img src="./assets/stacks/django.svg" alt="django">
+                            <div class="title">Django</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/node.svg" alt="node">
+                            <div class="title">Nodejs</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/php.svg" alt="php">
+                            <div class="title">PHP</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/postgres.svg" alt="postgres">
+                            <div class="title">Postgres</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/rabbitmq.svg" alt="rabbitmq">
+                            <div class="title">RabbitMQ</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/mongodb.svg" alt="mongodb">
+                            <div class="title">MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="header">
+                        Programming Languages
+                    </div>
+                    <div class="skillsets">
+                        <div class="skill-item">
+                            <img src="./assets/stacks/javascript.svg" alt="javascript">
+                            <div class="title">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/python.svg" alt="python">
+                            <div class="title">Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/php.svg" alt="php">
+                            <div class="title">PHP</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/c-sharp.svg" alt="csharp">
+                            <div class="title">C-Sharp</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="header">
+                        DevUps
+                    </div>
+                    <div class="skillsets">
+                        <div class="skill-item">
+                            <img src="./assets/stacks/docker.svg" alt="docker">
+                            <div class="title">Docker</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/aws.svg" alt="aws">
+                            <div class="title">AWS</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/github.svg" alt="github">
+                            <div class="title">Github</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/bitbucket.svg" alt="bitbucket">
+                            <div class="title">Bitbucket</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="header">
+                        Others
+                    </div>
+                    <div class="skillsets">
+                        <div class="skill-item">
+                            <img src="./assets/stacks/graphql.svg" alt="graphql">
+                            <div class="title">Graphql</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/flutter.svg" alt="flutter">
+                            <div class="title">Flutter</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/photoshop.svg" alt="photoshop">
+                            <div class="title">Photoshop</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/illustrator.svg" alt="illustrator">
+                            <div class="title">Illustrator</div>
+                        </div>
+                        <div class="skill-item">
+                            <img src="./assets/stacks/unity.svg" alt="unity">
+                            <div class="title">Unity</div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <!-- <div id="awards" class="component">
+                <div class="heading">Awards</div>
+                <br/>
+            </div> -->
+            <div id="education" class="component">
+                <div class="heading">Education</div>
+                <br/>
+                <div class="content">
+                    <div class="edu-card">
+                        <div class="header">
+                            ADEKUNLE AJASIN UNIVERSITY, AKUNGBA
+                            <div class="local">
+                                Ondo State, Nigeria
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>BSc Computer Science</li>
+                            <li>First Class</li>
+                            <li>Best Graduating Student (Dept)</li>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="header">
+                            VICTORY COLLEGE, IKARE
+                            <div class="local">
+                                Ondo State, Nigeria
+                            </div>
+                        </div>
+                        <div class="body">
+                            <li>Senior School Certificate</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="blog" class="component">
+                <div class="heading">Blog</div>
+                <br/>
+                <div class="content">
+                    <div class="blog-grid">
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
